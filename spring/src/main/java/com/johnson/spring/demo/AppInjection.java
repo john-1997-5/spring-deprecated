@@ -10,16 +10,13 @@ public class AppInjection {
     public static void main(String[] args) {
         // crear container buscando el xml en el classpath
         ApplicationContext ctx = new ClassPathXmlApplicationContext("appContext.xml");
-        /*
-        // crear container buscando el xml en la ruta que se le indique
-        ApplicationContext ctx = new FileSystemXmlApplicationContext("src/applicationContext.xml");
-        */
 
         // pillar bean -> usar la interfaz
         Coach coach = ctx.getBean("myCoach", Coach.class);
 
         // usamos bean
         System.out.println(coach.getTraining());
+        System.out.println(coach.getFortune());
 
     }
 }
