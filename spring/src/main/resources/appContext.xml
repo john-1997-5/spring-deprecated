@@ -19,6 +19,8 @@
     <!-- Inyección de dependencias mediante setter -->
     <bean id="myOtherCoach" class="com.johnson.spring.demo.TennisCoach">
         <property name="fortuneService" ref="myOtherFortune"/>
+        <property name="name" value="Toni Nadal"/>
+        <property name="email" value="toninadal@gmail.com"/>
     </bean>
     
 </beans>

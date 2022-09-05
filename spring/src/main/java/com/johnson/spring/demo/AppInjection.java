@@ -11,12 +11,15 @@ public class AppInjection {
         // crear container buscando el xml en el classpath
         ApplicationContext ctx = new ClassPathXmlApplicationContext("appContext.xml");
 
-        // pillar bean -> usar la interfaz
-        Coach coach = ctx.getBean("myOtherCoach", Coach.class);
+        // pillar bean -> usar la interfaz y hacer downcast
+        TennisCoach tennisCoach = (TennisCoach) ctx.getBean("myOtherCoach", Coach.class);
 
         // usamos bean
-        System.out.println(coach.getTraining());
-        System.out.println(coach.getFortune());
+        System.out.println("------------- Coach data ------------");
+        System.out.println("- Name: " + tennisCoach.getName());
+        System.out.println("- Email: " + tennisCoach.getEmail());
+        System.out.println("- Training: " + tennisCoach.getTraining());
+        System.out.println("- Pronóstico: " + tennisCoach.getFortune());
 
     }
 }
