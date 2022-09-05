@@ -12,7 +12,7 @@ public class AppInjection {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("appContext.xml");
 
         // pillar bean -> usar la interfaz
-        Coach coach = ctx.getBean("myCoach", Coach.class);
+        Coach coach = ctx.getBean("myOtherCoach", Coach.class);
 
         // usamos bean
         System.out.println(coach.getTraining());
