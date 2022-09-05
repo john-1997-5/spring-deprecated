@@ -1,4 +1,4 @@
-package com.johnson.spring;
+package com.johnson.spring.demo;
 
 import com.johnson.spring.demo.Coach;
 import com.johnson.spring.demo.KarateCoach;
@@ -15,8 +15,8 @@ public class AppInjection {
         ApplicationContext ctx = new FileSystemXmlApplicationContext("src/applicationContext.xml");
         */
 
-        // pillar bean
-        Coach coach = ctx.getBean("myCoach", KarateCoach.class);
+        // pillar bean -> usar la interfaz
+        Coach coach = ctx.getBean("myCoach", Coach.class);
 
         // usamos bean
         System.out.println(coach.getTraining());
