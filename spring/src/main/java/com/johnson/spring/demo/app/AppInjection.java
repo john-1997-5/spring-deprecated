@@ -1,7 +1,8 @@
-package com.johnson.spring.demo;
+package com.johnson.spring.demo.app;
 
 import com.johnson.spring.demo.Coach;
 import com.johnson.spring.demo.KarateCoach;
+import com.johnson.spring.demo.TennisCoach;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;

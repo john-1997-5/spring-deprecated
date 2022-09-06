@@ -16,4 +16,12 @@ public class KarateCoach implements Coach {
     public String getFortune() {
         return fortuneService.getFortune();
     }
+
+    public void whenStarting(){
+        System.out.println(" -> Bean casi listo...");
+    }
+
+    public void whenFinished(){
+        System.out.println(" -> Container closed..");
+    }
 }

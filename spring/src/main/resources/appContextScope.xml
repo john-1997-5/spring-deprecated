@@ -12,7 +12,10 @@
 
     <!-- Inyección de dependencias mediante constructor -->
     <!-- scope -> SINGLETON -->
-    <bean id="myCoach" class="com.johnson.spring.demo.KarateCoach" scope="prototype">
+    <bean id="myCoach"
+          class="com.johnson.spring.demo.KarateCoach"
+          init-method="whenStarting"
+          destroy-method="whenFinished">
         <constructor-arg ref="myFortune"/>
     </bean>
     
