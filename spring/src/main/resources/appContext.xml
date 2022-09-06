@@ -8,16 +8,16 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
-    <bean id="myFortune" class="com.johnson.spring.demo.service.GoodFortune"/>
+    <bean id="myFortune" class="com.johnson.spring.demo.GoodFortune"/>
 
     <!-- Inyección de dependencias mediante constructor -->
-    <bean id="myCoach" class="com.johnson.spring.demo.dao.KarateCoach">
+    <bean id="myCoach" class="com.johnson.spring.demo.KarateCoach">
         <constructor-arg ref="myFortune"/>
     </bean>
 
-    <bean id="myOtherFortune" class="com.johnson.spring.demo.service.BadFortuneImpl"/>
+    <bean id="myOtherFortune" class="com.johnson.spring.demo.BadFortune"/>
     <!-- Inyección de dependencias mediante setter -->
-    <bean id="myOtherCoach" class="com.johnson.spring.demo.dao.TennisCoach">
+    <bean id="myOtherCoach" class="com.johnson.spring.demo.TennisCoach">
         <property name="fortuneService" ref="myOtherFortune"/>
         <property name="name" value="Toni Nadal"/>
         <property name="email" value="toninadal@gmail.com"/>

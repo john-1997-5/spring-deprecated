@@ -1,6 +1,4 @@
-package com.johnson.spring.demo.dao;
-
-import com.johnson.spring.demo.service.FortuneService;
+package com.johnson.spring.demo;
 
 public class BaseballCoach implements Coach {
     private FortuneService fortuneService;

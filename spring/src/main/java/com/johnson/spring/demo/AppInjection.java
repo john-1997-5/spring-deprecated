@@ -1,9 +1,10 @@
 package com.johnson.spring.demo;
 
-import com.johnson.spring.demo.dao.Coach;
-import com.johnson.spring.demo.dao.TennisCoach;
+import com.johnson.spring.demo.Coach;
+import com.johnson.spring.demo.KarateCoach;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class AppInjection {
     public static void main(String[] args) {

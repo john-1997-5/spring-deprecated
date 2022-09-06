@@ -1,4 +1,4 @@
-package com.johnson.spring.demo.service;
+package com.johnson.spring.demo;
 
 public interface FortuneService {
     public String getFortune();

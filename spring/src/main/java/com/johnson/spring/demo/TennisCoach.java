@@ -1,8 +1,8 @@
-package com.johnson.spring.demo.dao;
+package com.johnson.spring.demo;
 
-import com.johnson.spring.demo.service.FortuneService;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
