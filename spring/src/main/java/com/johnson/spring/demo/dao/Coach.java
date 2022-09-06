@@ -1,4 +1,4 @@
-package com.johnson.spring.demo;
+package com.johnson.spring.demo.dao;
 
 public interface Coach {
     public String getTraining();
